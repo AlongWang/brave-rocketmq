@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <parent>
+        <groupId>com.alongwang</groupId>
+        <artifactId>brave-instrumentation</artifactId>
+        <version>5.14.0</version>
+    </parent>
+
+    <artifactId>brave-instrumentation-rocketmq</artifactId>
+    <name>Brave Instrumentation: RocketMQ v4.x</name>
+
+
+    <properties>
+        <module.name>brave.rocketmq</module.name>
+        <brave.version>5.14.1</brave.version>
+        <rocketmq.version>4.2.0</rocketmq.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>${rocketmq.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.zipkin.brave</groupId>
+            <artifactId>brave-instrumentation-messaging</artifactId>
+            <version>${brave.version}</version>
+        </dependency>
+    </dependencies>
+</project>
