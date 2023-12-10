@@ -1,4 +1,4 @@
-package rocketmq;
+package com.alongwang.brave.instrumentation.rocketmq;
 
 final class RocketMQTags {
     static final String ROCKETMQ_KEY_TAG = "rocketMQ.key";

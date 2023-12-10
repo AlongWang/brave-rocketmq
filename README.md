@@ -4,6 +4,10 @@
 TracingProducer 为每条消息生成span数据，并将span数据放在消息的属性（properties）当中
 TracingMessageListenerConcurrently 负责将消息属性（properties）中的span数据提取出来，并继续链路跟踪
 
+## 要求
+
+
+
 ## 如何使用
 ### 配置
 引入依赖

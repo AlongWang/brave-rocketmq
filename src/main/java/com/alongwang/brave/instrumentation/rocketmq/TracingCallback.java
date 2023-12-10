@@ -1,4 +1,4 @@
-package rocketmq;
+package com.alongwang.brave.instrumentation.rocketmq;
 
 import brave.Span;
 import brave.internal.Nullable;
